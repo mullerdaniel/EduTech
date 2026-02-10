@@ -1,14 +1,47 @@
+:root {
+  /* 🎨 Modo Claro */
+
+  /* Fundo */
+  --color-bg-body: #F9F9F9;        /* Fundo neutro claro */
+  --color-bg-card: #FFFFFF;       /* Fundo do card/caixa */
+
+  /* Texto */
+  --color-text-primary: #1E1E1E;   /* Texto principal escuro */
+
+  /* Cores principais */
+  --color-primary: #0077CC;        /* Azul profissional vibrante */
+  --color-primary-hover: #005FA3;  /* Hover em links/botões */
+
+  /* Bordas e divisores */
+  --color-border: #E0E0E0;         /* Cinza claro */
+}
+
 
 
 .header {
     display: flex;
+    justify-content: space-between;
 }
 
 .logo-e-nome {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .botoes {
     display: flex;
+    align-items: center;
     gap: 20px
+}
+
+.nome-site h2 {
+    color: var(--color-primary);
+}
+
+.botao-home a{
+    color: var(--color-primary-hover);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
 }
