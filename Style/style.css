@@ -1,0 +1,14 @@
+
+
+.header {
+    display: flex;
+}
+
+.logo-e-nome {
+    display: flex;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px
+}
