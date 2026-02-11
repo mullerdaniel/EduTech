@@ -1,26 +1,29 @@
 :root {
-  /* 🎨 Modo Claro */
-
-  /* Fundo */
-  --color-bg-body: #F9F9F9;        /* Fundo neutro claro */
-  --color-bg-card: #FFFFFF;       /* Fundo do card/caixa */
-
-  /* Texto */
-  --color-text-primary: #1E1E1E;   /* Texto principal escuro */
-
-  /* Cores principais */
-  --color-primary: #0077CC;        /* Azul profissional vibrante */
-  --color-primary-hover: #005FA3;  /* Hover em links/botões */
-
-  /* Bordas e divisores */
-  --color-border: #E0E0E0;         /* Cinza claro */
+    --color-bg-body: #F9F9F9;
+    --color-bg-card: #FFFFFF;
+    --color-text-primary: #1E1E1E;
+    --color-primary: #0077CC;
+    --color-primary-hover: #005FA3;
+    --color-border: #E0E0E0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
 
 
 .header {
     display: flex;
     justify-content: space-between;
+    margin: 10px;
 }
 
 .logo-e-nome {
@@ -36,12 +39,142 @@
 }
 
 .nome-site h2 {
-    color: var(--color-primary);
+    font-weight: 600;
+    color: blue;
 }
 
-.botao-home a{
+.botao-home a {
     color: var(--color-primary-hover);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.botoes-geral a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+/* TITULO INCENTIVO*/
+.titulo-incentivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.titulo-site {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-site h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.sub-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.sub-titulo h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.527);
+}
+
+
+/* NOSSOS CURSOS */
+.titulo-nossos-cursos h3 {
+    font-size: 2.2rem;
+    margin-left: 20px;
+}
+
+/* BLOCOS */
+.cursos {
+    padding: 60px 80px;
+}
+
+.todos-os-curos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.bloco {
+    width: 410px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.nome-curso {
+    padding: 20px;
+}
+
+.nome-curso h3 {
+    font-size: 28px;
     font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #111827;
+    margin-bottom: -20px;
+}
+
+.informacoes-curso {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px;
+    margin-top: -20px;
+}
+
+.informacoes-curso img {
+    width: 26px;
+    height: 26px;
+}
+
+.total-de-horas h3,
+.nome-do-local h3 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #6b7280;
+}
+
+.botao-ver-detalhes {
+    padding: 15px 20px 0 20px;
+    margin-top: auto;
+}
+
+.botao-ver-detalhes a {
+    display: block;
+    text-align: center;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.botao-ver-detalhes a:hover {
+    background: #1e4fd1;
 }
