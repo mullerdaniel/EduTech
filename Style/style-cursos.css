@@ -189,14 +189,14 @@ h2 {
 
 .info-contato p {
     margin-bottom: 8px;
-}
-
-.redes-sociais {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-}
-
+}                                                                             
+                                                                      
+.redes-sociais {                                                 
+    display: flex;                                                            
+    gap: 15px;                             
+    margin-top: 10px;                                      
+}                                                   
+                                                
 .linha-footer {
     margin-top: 40px;
     height: 1px;
