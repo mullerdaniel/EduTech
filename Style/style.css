@@ -19,7 +19,6 @@ h2 {
     font-weight: 400;
 }
 
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -361,3 +360,118 @@ h2 {
     font-size: 13px;
     color: #6b7280;
 }
+
+
+/* ========================= */
+/*        MOBILE VERSION      */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* ESPAÇAMENTO GERAL */
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* HEADER */
+
+    .header {
+        padding: 10px;
+    }
+
+    .nome-site h2 {
+        font-size: 16px;
+    }
+
+    .botoes {
+        gap: 10px;
+    }
+
+    .botoes-geral,
+    .botao-home {
+        display: none;
+        /* some menu desktop igual imagem */
+    }
+
+    /* TITULO */
+
+    .titulo-site h1 {
+        font-size: 26px;
+        padding: 0 15px;
+    }
+
+    .sub-titulo h2 {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    /* CURSOS */
+
+    .cursos {
+        padding: 20px;
+    }
+
+    .titulo-nossos-cursos h3 {
+        font-size: 20px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .todos-os-curos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bloco {
+        width: 100%;
+    }
+
+    .nome-curso h3 {
+        font-size: 18px;
+    }
+
+    .botao-ver-detalhes a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* MATRÍCULA */
+
+    .matricula {
+        padding: 20px;
+    }
+
+    .conteudo-matricula {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .formulario-matricula {
+        padding: 20px;
+    }
+
+    .linha-dupla {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .areas-conhecimento {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .conteudo-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+}
+
