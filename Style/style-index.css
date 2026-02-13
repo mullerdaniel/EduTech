@@ -10,7 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
-    transition: 0,3s;
+    transition: 0, 3s;
 }
 
 /* TROCA DE TEMA */
@@ -19,7 +19,46 @@ body {
     color: white;
 }
 
+body.dark-mode .sub-titulo h2 {
+    color: white;
+}
 
+body.dark-mode .botao-home a {
+    color: rgb(0, 153, 255);
+}
+
+body.dark-mode .botoes-geral a {
+    color: white;
+}
+
+body.dark-mode .bloco {
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+body.dark-mode .nome-curso h3 {
+    color: white;
+}
+
+body.dark-mode .campo input {
+    background-color: black;
+}
+
+body.dark-mode .campo select {
+    color: white;
+    background-color: black;
+}
+
+body.dark-mode .footer-coluna h3 {
+    color: white;
+}
+
+body.dark-mode .footer-coluna p {
+    color: white;
+}
+
+
+/* -------------------------------------- */
 
 h1 {
     font-weight: 700;
@@ -50,7 +89,7 @@ h2 {
 
 .nome-site h2 {
     font-weight: 600;
-    color: blue;
+    color: rgb(0, 119, 255);
 }
 
 .botao-home a {
@@ -484,4 +523,3 @@ h2 {
     }
 
 }
-
