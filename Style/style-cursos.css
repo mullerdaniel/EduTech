@@ -19,6 +19,50 @@ h2 {
     font-weight: 400;
 }
 
+/* TROCA DE TEMA */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .sub-titulo h2 {
+    color: white;
+}
+
+body.dark-mode .botao-home a {
+    color: rgb(0, 153, 255);
+}
+
+body.dark-mode .botoes-geral a {
+    color: white;
+}
+
+body.dark-mode .bloco {
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+body.dark-mode .nome-curso h3 {
+    color: white;
+}
+
+body.dark-mode .campo input {
+    background-color: black;
+}
+
+body.dark-mode .campo select {
+    color: white;
+    background-color: black;
+}
+
+body.dark-mode .footer-coluna h3 {
+    color: white;
+}
+
+body.dark-mode .footer-coluna p {
+    color: white;
+}
+
 /* HEADER */
 
 .header {
@@ -189,14 +233,14 @@ h2 {
 
 .info-contato p {
     margin-bottom: 8px;
-}                                                                             
-                                                                      
-.redes-sociais {                                                 
-    display: flex;                                                            
-    gap: 15px;                             
-    margin-top: 10px;                                      
-}                                                   
-                                                
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
 .linha-footer {
     margin-top: 40px;
     height: 1px;
