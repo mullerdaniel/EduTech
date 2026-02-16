@@ -1,19 +1,28 @@
 const trocaDeTema = document.getElementById("toggleTema");
+const themeIcon = trocaDeTema.querySelector("img"); 
 
-trocaDeTema.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-
-
-if (document.body.classList.contains("dark-mode")) {
-    localStorage.setItem("tema", "escuro");
-
-}else {
-    localStorage.setItem("tema", "claro");
-
+function atualizarIcone(isDark) {
+    if (isDark) {
+        themeIcon.setAttribute("src", "/images/sun.svg");
+        themeIcon.setAttribute("alt", "Logo do Sol - Tema Claro");
+    } else {
+        themeIcon.setAttribute("src", "/images/moon.svg");
+        themeIcon.setAttribute("alt", "Logo da Lua - Tema Escuro");
+    }
 }
-});
 
-
-if(localStorage.getItem("tema") == "escuro") {
+if (localStorage.getItem("tema") === "escuro") {
     document.body.classList.add("dark-mode");
+    atualizarIcone(true);
 }
+
+trocaDeTema.addEventListener("click", function(event) {
+    event.preventDefault();
+    
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+
+    localStorage.setItem("tema", isDark ? "escuro" : "claro");
+    
+    atualizarIcone(isDark);
+});
