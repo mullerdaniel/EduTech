@@ -19,6 +19,42 @@ h2 {
     font-weight: 400;
 }
 
+/* TROCA DE TEMA */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .botao-home a {
+    color: rgb(0, 153, 255);
+}
+
+body.dark-mode .botoes-geral a {
+    color: white;
+}
+
+body.dark-mode .voltar a {
+    background-color: #000000;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.781);
+}
+
+body.dark-mode .btn-secundario {
+    color: white;
+}
+
+body.dark-mode .descricao {
+    color: white;
+}
+
+body.dark-mode .footer-coluna h3 {
+    color: white;
+}
+
+body.dark-mode .footer-coluna p {
+    color: white;
+}
+
 /* HEADER */
 
 .header {
